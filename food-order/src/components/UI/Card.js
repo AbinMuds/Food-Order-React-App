@@ -1,12 +1,12 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import classes from './Card.module.css';
 
 function Card(props) {
   return (
-    <Fragment className={classes.Card}>
+    <div className={classes.card}>
         {props.children}
-    </Fragment>
+    </div>
   )
 }
 
-export default Card
+export default Card;
