@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 import classes from './AvailableMeals.module.css';
 import MealItem from './MealItem/MealItem';
 import Card from '../UI/Card';
-import NewMealsForm from './NewMealsForm';
 
 const AvailableMeals = () => {
     const [ meals, setMeals ] = useState([]);
@@ -60,7 +59,6 @@ const AvailableMeals = () => {
     return <section className={classes.meals}>
         <Card>
             <ul>{mealsList}</ul>
-            <NewMealsForm />
         </Card>
     </section>
 };
